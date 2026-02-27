@@ -1,0 +1,77 @@
+# Entorno y secretos
+.env
+.env.local
+.env.*.local
+.envrc
+.env.*
+!.env.example
+
+# Config local sensible
+*local.yml
+*local.yaml
+application-local.yml
+**/application-local.yml
+
+# Credenciales, llaves y certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_dsa
+
+# Archivos de secretos comunes
+secrets.*
+secret.*
+credentials.*
+service-account*.json
+*.secret
+*.secrets
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend (Java / Maven)
+backend/target/
+backend/*.jar
+backend/*.war
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Frontend (Node / Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Logs y temporales
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# Cobertura y reportes
+coverage/
+*.lcov
+backend/target/site/
+
+# Docker (opcional, descomentar si no quieres versionar)
+# docker-compose.override.yml
